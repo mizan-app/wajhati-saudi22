@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="وجهتي السعودية — اكتشف أجمل الوجهات السياحية والفنادق والمطاعم والفعاليات في المملكة.">
+  <title>وجهتي السعودية | اكتشف جمال المملكة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="وجهتي السعودية - الرئيسية">
+      <span class="brand-mark">و</span>
+      <span><strong>وجهتي السعودية</strong><small>اكتشف جمال المملكة</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#destinations">الوجهات</a>
+      <a href="#places">الأماكن السياحية</a>
+      <a href="#restaurants">المطاعم</a>
+      <a href="#hotels">الفنادق</a>
+      <a href="#events">الفعاليات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="header-cta" href="#booking">خطط لرحلتك <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow light">أرض الحكايات والتجارب الاستثنائية</span>
+        <h1>السعودية أقرب<br>إلى <em>قلبك</em> مما تتخيل</h1>
+        <p>من سحر العلا إلى شواطئ البحر الأحمر، اكتشف وجهتك القادمة وصمّم رحلة تشبهك.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#destinations">اكتشف الوجهات <span>←</span></a>
+          <a class="btn btn-glass" href="#booking">خطط لرحلتك</a>
+        </div>
+        <div class="hero-note"><span class="note-dot"></span> تجارب ملهمة في كل منطقة من المملكة</div>
+      </div>
+      <div class="hero-stamp"><span>وجهتك</span><strong>هنا</strong><small>SAUDI ARABIA</small></div>
+    </section>
+
+    <section class="search-panel wrap" aria-label="البحث عن وجهة">
+      <div class="search-intro"><span class="search-icon">⌕</span><div><strong>وين وجهتك الجاية؟</strong><small>ابدأ البحث عن تجربة جديدة</small></div></div>
+      <label class="search-field"><span>المدينة</span>
+        <select id="citySearch">
+          <option value="all">كل المدن</option><option value="الرياض">الرياض</option><option value="جدة">جدة</option>
+          <option value="العلا">العلا</option><option value="أبها">أبها</option><option value="الطائف">الطائف</option><option value="نيوم">نيوم</option>
+        </select>
+      </label>
+      <label class="search-field"><span>نوع التجربة</span>
+        <select id="typeSearch"><option value="all">كل التجارب</option><option value="طبيعة">طبيعة</option><option value="ثقافة">ثقافة وتراث</option><option value="ترفيه">ترفيه</option><option value="بحر">بحر</option></select>
+      </label>
+      <button class="btn btn-green search-submit" id="searchBtn">اعثر على وجهتك <span>←</span></button>
+    </section>
+
+    <section class="section wrap" id="destinations">
+      <div class="section-heading">
+        <div><span class="eyebrow">وجهات تستحق الاكتشاف</span><h2>كل منطقة… <em>حكاية مختلفة</em></h2></div>
+        <p>اختر الأجواء التي تحبها، واترك للسعودية مهمة إبهارك.</p>
+      </div>
+      <div class="city-grid">
+        <article class="city-card city-large" data-city="العلا" data-type="طبيعة ثقافة">
+          <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1100&q=85" alt="تكوينات صخرية صحراوية في العلا" loading="lazy">
+          <div class="city-overlay"><span class="city-tag">تاريخ وطبيعة</span><h3>العلا</h3><p>رحلة بين الصخور العريقة والسماء المفتوحة.</p><a href="#places" class="text-link" data-city-link="العلا">اكتشف العلا <span>←</span></a></div>
+        </article>
+        <article class="city-card" data-city="جدة" data-type="بحر ثقافة">
+          <img src="https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=800&q=85" alt="واجهة بحرية ومدينة حديثة" loading="lazy">
+          <div class="city-overlay"><span class="city-tag">بحر وحياة</span><h3>جدة</h3><p>نسيم البحر وروح المدينة.</p><a href="#places" class="text-link" data-city-link="جدة">اكتشف جدة <span>←</span></a></div>
+        </article>
+        <article class="city-card" data-city="الرياض" data-type="ترفيه ثقافة">
+          <img src="https://images.unsplash.com/photo-_arabic-placeholder?auto=format&fit=crop&w=800&q=85" alt="أفق مدينة الرياض" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=85'">
+          <div class="city-overlay"><span class="city-tag">عصرية وحيوية</span><h3>الرياض</h3><p>تجارب حضرية وفعاليات لا تتوقف.</p><a href="#places" class="text-link" data-city-link="الرياض">اكتشف الرياض <span>←</span></a></div>
+        </article>
+        <article class="city-card" data-city="أبها" data-type="طبيعة">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85" alt="جبال خضراء وبحيرة" loading="lazy">
+          <div class="city-overlay"><span class="city-tag">مرتفعات خضراء</span><h3>أبها</h3><p>هواء عليل ومناظر تريح البال.</p><a href="#places" class="text-link" data-city-link="أبها">اكتشف أبها <span>←</span></a></div>
+        </article>
+        <article class="city-card" data-city="الطائف" data-type="طبيعة ثقافة">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85" alt="طبيعة خضراء ومسارات بين الأشجار" loading="lazy">
+          <div class="city-overlay"><span class="city-tag">ورد وأجواء لطيفة</span><h3>الطائف</h3><p>حدائق ومرتفعات وتجارب محلية.</p><a href="#places" class="text-link" data-city-link="الطائف">اكتشف الطائف <span>←</span></a></div>
+        </article>
+        <article class="city-card" data-city="نيوم" data-type="بحر طبيعة">
+          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85" alt="مياه بحر صافية وساحل" loading="lazy">
+          <div class="city-overlay"><span class="city-tag">بحر ومستقبل</span><h3>نيوم</h3><p>سواحل مذهلة ورؤى جديدة للسياحة.</p><a href="#places" class="text-link" data-city-link="نيوم">اكتشف نيوم <span>←</span></a></div>
+        </article>
+      </div>
+      <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+    </section>
+
+    <section class="experience-band">
+      <div class="wrap band-inner">
+        <div><span class="eyebrow light">رحلتك على مزاجك</span><h2>مو بس مكان تزوره…<br><em>ذكرى تعيش معك</em></h2></div>
+        <p>سواء كنت تبحث عن المغامرة، أو الهدوء، أو اكتشاف التاريخ، اجمع تفاصيل رحلتك في مكان واحد.</p>
+        <a class="btn btn-gold" href="#booking">ابدأ التخطيط <span>←</span></a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="places">
+      <div class="section-heading">
+        <div><span class="eyebrow">أماكن مختارة</span><h2>محطات <em>لا تفوّتها</em></h2></div>
+        <p>أفكار لزيارتك القادمة — تحقق من المواعيد والتفاصيل قبل الانطلاق.</p>
+      </div>
+      <div class="filter-row" id="placeFilters">
+        <button class="filter-chip selected" data-filter="all">كل الأماكن</button>
+        <button class="filter-chip" data-filter="طبيعة">الطبيعة</button>
+        <button class="filter-chip" data-filter="ثقافة">الثقافة والتراث</button>
+        <button class="filter-chip" data-filter="بحر">البحر</button>
+        <button class="filter-chip" data-filter="ترفيه">الترفيه</button>
+      </div>
+      <div class="place-grid" id="placeGrid">
+        <article class="place-card" data-city="العلا" data-type="طبيعة ثقافة"><img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=800&q=85" alt="مناظر العلا" loading="lazy"><div class="place-info"><span class="place-city">العلا</span><h3>تكوينات العلا الصخرية</h3><p>استكشف مشاهد طبيعية تحكي تاريخ المكان.</p><div class="place-meta"><span>◷ تحقق من أوقات الزيارة</span><button class="save-btn" aria-label="إضافة للمفضلة" title="إضافة للمفضلة">♡</button></div></div></article>
+        <article class="place-card" data-city="جدة" data-type="بحر"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85" alt="البحر الأحمر" loading="lazy"><div class="place-info"><span class="place-city">جدة</span><h3>واجهة البحر الأحمر</h3><p>نزهة بحرية وغروب يستحق التوقف عنده.</p><div class="place-meta"><span>◷ تختلف حسب الموقع</span><button class="save-btn" aria-label="إضافة للمفضلة" title="إضافة للمفضلة">♡</button></div></div></article>
+        <article class="place-card" data-city="الرياض" data-type="ترفيه ثقافة"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=85" alt="معالم عمرانية في الرياض" loading="lazy"><div class="place-info"><span class="place-city">الرياض</span><h3>اكتشاف قلب العاصمة</h3><p>مزيج من المعالم الحديثة والمقاهي والتجارب.</p><div class="place-meta"><span>◷ حسب الوجهة</span><button class="save-btn" aria-label="إضافة للمفضلة" title="إضافة للمفضلة">♡</button></div></div></article>
+        <article class="place-card" data-city="أبها" data-type="طبيعة"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85" alt="مناظر جبلية" loading="lazy"><div class="place-info"><span class="place-city">أبها</span><h3>المرتفعات والمناظر الطبيعية</h3><p>وقت هادئ بين الجبال والهواء المنعش.</p><div class="place-meta"><span>◷ حسب الطقس والموقع</span><button class="save-btn" aria-label="إضافة للمفضلة" title="إضافة للمفضلة">♡</button></div></div></article>
+      </div>
+      <p class="empty-state" id="emptyPlaces" hidden>ما لقينا أماكن تطابق اختيارك. جرب تصنيفًا آخر.</p>
+    </section>
+
+    <section class="section soft-section" id="restaurants">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="eyebrow">نكهات من كل مكان</span><h2>جرّب طعم <em>الضيافة السعودية</em></h2></div>
+          <p>أفكار لتجارب الطعام خلال رحلتك. أضف خياراتك المفضلة إلى خطتك.</p>
+        </div>
+        <div class="simple-grid">
+          <article class="simple-card"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="أطباق طعام متنوعة" loading="lazy"><div><span class="place-city">تجربة محلية</span><h3>المطبخ السعودي</h3><p>اكتشف أطباقًا شعبية ونكهات من مناطق المملكة.</p><a href="#booking" class="text-link">أضفها لخطتك ←</a></div></article>
+          <article class="simple-card"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=85" alt="مطعم بتصميم مريح" loading="lazy"><div><span class="place-city">جلسة مميزة</span><h3>مطاعم بإطلالات جميلة</h3><p>اختر مطعمًا يناسب أجواء يومك ورفقة رحلتك.</p><a href="#booking" class="text-link">أضفها لخطتك ←</a></div></article>
+          <article class="simple-card"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85" alt="قهوة في مقهى" loading="lazy"><div><span class="place-city">استراحة الطريق</span><h3>مقاهي محلية</h3><p>خذ استراحة قهوة واكتشف أحياء المدينة.</p><a href="#booking" class="text-link">أضفها لخطتك ←</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="hotels">
+      <div class="section-heading">
+        <div><span class="eyebrow">مكانك للراحة</span><h2>إقامة تناسب <em>رحلتك</em></h2></div>
+        <p>هذه فئات مقترحة للإقامة وليست حجوزات مؤكدة؛ تحقق من الأسعار والتوفر لدى مزود الخدمة.</p>
+      </div>
+      <div class="hotel-grid">
+        <article class="hotel-card"><div class="hotel-icon">✦</div><div><span class="place-city">رفاهية</span><h3>فنادق فاخرة</h3><p>لمن يبحث عن خدمة مميزة وتجربة إقامة متكاملة.</p></div><a href="#booking" aria-label="خطط لإقامة فاخرة">←</a></article>
+        <article class="hotel-card"><div class="hotel-icon">⌂</div><div><span class="place-city">عائلية</span><h3>شقق وأجنحة</h3><p>مساحات مريحة للعائلات والرحلات الطويلة.</p></div><a href="#booking" aria-label="خطط لإقامة عائلية">←</a></article>
+        <article class="hotel-card"><div class="hotel-icon">☼</div><div><span class="place-city">طبيعة</span><h3>منتجعات وأكواخ</h3><p>استمتع بأجواء هادئة بعيدًا عن صخب المدينة.</p></div><a href="#booking" aria-label="خطط لإقامة وسط الطبيعة">←</a></article>
+      </div>
+    </section>
+
+    <section class="section event-section" id="events">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="eyebrow">دائمًا فيه شيء جديد</span><h2>عيش أجواء <em>الفعاليات</em></h2></div>
+          <p>تابع الإعلانات الرسمية لأن المواعيد والتذاكر تتغير من موسم لآخر.</p>
+        </div>
+        <div class="event-grid">
+          <article class="event-card"><div class="event-number">01</div><div><span class="place-city">الرياض</span><h3>مواسم وتجارب ترفيهية</h3><p>عروض وأنشطة وتجارب متنوعة بحسب البرنامج المعلن.</p></div><span class="event-arrow">↙</span></article>
+          <article class="event-card"><div class="event-number">02</div><div><span class="place-city">جدة</span><h3>فعاليات البحر والثقافة</h3><p>استكشف الأنشطة البحرية والفعاليات المحلية المتاحة.</p></div><span class="event-arrow">↙</span></article>
+          <article class="event-card"><div class="event-number">03</div><div><span class="place-city">مناطق المملكة</span><h3>مهرجانات ومواسم محلية</h3><p>تعرّف على تراث المناطق وأسواقها وتجاربها الموسمية.</p></div><span class="event-arrow">↙</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="wrap booking-layout">
+        <div class="booking-copy"><span class="eyebrow light">خلّنا نساعدك تبدأ</span><h2>رحلتك القادمة<br><em>تبدأ بخطوة</em></h2><p>عبّئ التفاصيل التالية، وسجّل خطة رحلتك المبدئية. هذا النموذج تجريبي ولا ينشئ حجزًا مؤكدًا.</p><div class="booking-perk"><span>✓</span> حدد المدينة التي تود زيارتها</div><div class="booking-perk"><span>✓</span> اختر التاريخ وعدد المسافرين</div><div class="booking-perk"><span>✓</span> أرسل تفاصيل رحلتك المبدئية</div></div>
+        <form class="form-card" id="bookingForm">
+          <h3>خطط لرحلتك</h3><p class="form-subtitle">الحقول التي بجانبها * مطلوبة</p>
+          <div class="form-grid">
+            <label>الاسم الكامل *<input name="name" type="text" placeholder="اكتب اسمك" required minlength="2"></label>
+            <label>رقم الجوال *<input name="phone" type="tel" placeholder="05xxxxxxxx" required pattern="[0-9+() -]{8,18}"></label>
+            <label class="full">البريد الإلكتروني *<input name="email" type="email" placeholder="name@example.com" required></label>
+            <label>المدينة المراد زيارتها *<select name="city" required><option value="">اختر المدينة</option><option>الرياض</option><option>جدة</option><option>العلا</option><option>أبها</option><option>الطائف</option><option>نيوم</option></select></label>
+            <label>عدد الأشخاص *<select name="people" required><option value="">اختر العدد</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6 أو أكثر</option></select></label>
+            <label>تاريخ الزيارة *<input name="date" id="visitDate" type="date" required></label>
+            <label>نوع الرحلة<select name="tripType"><option>عائلية</option><option>أصدقاء</option><option>فردية</option><option>شهر عسل</option><option>استكشاف ومغامرة</option></select></label>
+            <label class="full">ملاحظات إضافية<textarea name="notes" rows="3" placeholder="ما التجارب التي تفضلها؟"></textarea></label>
+          </div>
+          <label class="consent"><input type="checkbox" required> أوافق على استخدام البيانات للتواصل بشأن هذا الطلب التجريبي.</label>
+          <button class="btn btn-green submit-btn" type="submit">إرسال خطة الرحلة <span>←</span></button>
+          <p class="form-message" id="bookingMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section wrap contact-section" id="contact">
+      <div class="section-heading">
+        <div><span class="eyebrow">نحن هنا لمساعدتك</span><h2>خلّنا <em>نتواصل</em></h2></div>
+        <p>عندك اقتراح أو استفسار؟ أرسل لنا رسالتك من خلال النموذج.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-card"><div class="contact-symbol">✉</div><h3>يسعدنا نسمع منك</h3><p>شاركنا رأيك أو اقترح وجهة تتمنى إضافتها إلى دليل وجهتي السعودية.</p><div class="contact-detail"><span>⌖</span><div><strong>نغطي مناطق المملكة</strong><small>من الشمال إلى الجنوب ومن الشرق إلى الغرب</small></div></div><div class="contact-detail"><span>♡</span><div><strong>اقتراحاتك تهمنا</strong><small>ساعدنا في تطوير تجربة الاستكشاف</small></div></div></div>
+        <form class="form-card contact-form" id="contactForm">
+          <h3>أرسل رسالة</h3>
+          <div class="form-grid">
+            <label>الاسم *<input name="name" required placeholder="اسمك الكريم"></label>
+            <label>البريد الإلكتروني *<input name="email" type="email" required placeholder="name@example.com"></label>
+            <label class="full">الموضوع *<input name="subject" required placeholder="موضوع رسالتك"></label>
+            <label class="full">الرسالة *<textarea name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea></label>
+          </div>
+          <button class="btn btn-green submit-btn" type="submit">إرسال الرسالة <span>←</span></button>
+          <p class="form-message" id="contactMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">و</span><span><strong>وجهتي السعودية</strong><small>اكتشف جمال المملكة</small></span></a><p>اكتشف جمال السعودية… وجهتك تبدأ من هنا.</p><a href="#home" class="back-top">العودة للأعلى ↑</a></div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> وجهتي السعودية — مشروع سياحي تجريبي.</span><span>المعلومات والصور إرشادية، وقد تتغير تفاصيل الوجهات والفعاليات.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
